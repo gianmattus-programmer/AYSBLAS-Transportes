@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logoAYSBLAS1.png" type="image/png">
+    <title>AYSBLAS - Transportes</title>
+    <meta name="description" content="Somos una empresa dedicada a la prestación de servicios de transporte y logística">
+    <meta name="keywords" content="transporte, logística, carga, camiones, transporte de carga, transporte de mercancías, mudanzas, transporte de materiales, grupos electrógenos, maquinaria ligera, servicio de mudanzas, transporte pesado, transporte express, carga express, transporte de construcción, transporte de maquinaria, transporte industrial, logística integral, empresa de transportes, transporte seguro, transporte confiable, servicios logísticos, transporte de equipos, transporte local, transporte nacional, fletes, mudanzas corporativas, mudanzas residenciales, transporte especializado, embalaje profesional, almacenamiento, distribución, gestión logística, transporte de carga pesada, transporte de materiales de construcción, empresa de mudanzas, servicios de embalaje, transporte de muebles, transporte de oficinas, logística de construcción, logística empresarial, transporte de herramientas, transporte de equipos industriales, servicio de carga, transporte 24 horas, mudanzas empresariales, transporte de agregados, transporte en Lima, transporte en Perú, AYSBLAS transportes, servicio de fletes">
+    <meta name="copyright" content="Derecho Reservados gianmattus-programmer">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img src="./assets/logoAYSBLAS.png" alt="AYSBLAS Logo" class="dark-logo">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Inicio</a></li>
+                    <li><a class="services-link" onclick="closeMenu()" href="#servicesDesktop">Servicios</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Sobre nosotros</a></li>
+                    <li><a onclick="closeMenu()" href="#suporte">Contacto</a></li>
+                </ul>
+
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="./assets/logoAYSBLAS.png" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <header id="home">
+        <!-- <div class="video">
+            <video autoplay muted loop>
+                <source src="./assets/456055_Bangkok_Thailand_1280x720.mp4" type="video/mp4">
+            </video>
+        </div> -->
+        
+        <div class="wrapper">
+            <div class="content">
+                <div class="text">
+
+                    <div class="text-content">
+                        <img data-aos="fade-up-left" class="logo" src="./assets/tracosDamatta.webp" alt="">
+                        <h1 data-aos="fade-up-left">Bienvenido a AYSBLAS Transportes.</h1>
+                        <p data-aos="fade-up-left">Brindamos soluciones rápidas, seguras y eficientes para el traslado de mercancías,<span> maquinaria y materiales en todo el país</span>.</p>
+                        <div data-aos="fade-up-left" class="buttons">
+                            <a href="#servicesDesktop" class="services-link" id="main-service-button"><button>Descubra nuestros servicios</button></a>
+                            <a href="#suporte"><button>Saber más</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="interactive-image" class="image main-background-image">
+                    <img src="./assets/maquinapesada.webp" alt="Maquinaria pesada de transporte" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="servicesDesktop">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">SERVICIOS</span>
+                    <h2>Operamos en varias <span>áreas</span>, tales como:</h2>
+                </header>
+
+                <div data-aos="fade-up"
+                data-aos-duration="3000" class="container">
+                    <div class="box">
+                        <h3>Carga General y Express</h3>
+                        <div class="additional-content">
+                            <p>Soluciones técnicas e innovadoras para proyectos de construcción e infraestructura</p>
+                            <a href="#service-um"><button>Ver más</button></a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <h3>Materiales para Obras</h3>
+                        <div class="additional-content">
+                            <p>Disponibilidad de equipos robustos y eficientes para diversas obras y proyectos.</p>
+                            <a href="#service-dois"><button>Ver más</button></a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <h3>Grupos Electrógenos y Maquinaria Ligera</h3>
+                        <div class="additional-content">
+                            <p>Implementación de sistemas de energía solar para una fuente sostenible y renovable de electricidad.</p>
+                            <a href="#service-tres"><button>Ver más</button></a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <h3>Servicios de Mudanzas</h3>
+                        <div class="additional-content">
+                            <p>Preparación del terreno para proyectos de construcción, nivelando y estabilizando el suelo para crear una base sólida y adecuada.</p>
+                            <a href="#service-quatro"><button>Ver más</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="icone" src="./assets/tracosDamatta.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">SERVICIOS</span>
+                    <h2>Operamos en varias <span>áreas de traslados</span>, tales como:</h2>
+                </header>
+
+                <div class="cards">
+                    <img class="iconeDamatta" src="./assets/iconeTdamatta.svg" alt="">
+                    <div data-aos="fade-up-left" class="card">
+                        <h3>Carga General y Express</h3>
+                        <p>Envío rápido y seguro de mercancías con cumplimiento de plazos.</p>
+                        <a href="#service-um">Ver más <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="card">
+                        <h3>Materiales para Obras</h3>
+                        <p>Movilización de cemento, fierro, madera y otros insumos de construcción.</p>
+                        <a href="#service-dois">Ver más <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="card">
+                        <h3>Grupos Electrógenos y Maquinaria Ligera</h3>
+                        <p>Transporte especializado con equipos adecuados para evitar daños.</p>
+                        <a href="#service-tres">Ver más <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="card">
+                        <h3>Servicios de Mudanzas</h3>
+                        <p>Servicio completo para hogares y empresas, con manipulación cuidadosa y puntualidad.</p>
+                        <a href="#service-quatro">Ver más <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="service-um" class="topic">
+        <div class="content">
+                <div class="wrapper">
+                    <div class="text">
+                        <h2 data-aos="fade-up-right">TRANSPORTE <span>DE</span> CARGA Y CARGA EXPRESS</h2>
+                        <h3 data-aos="fade-up-right">Un servicio estratégico que garantiza el transporte 
+                            <span>seguro y eficiente</span> de mercancías, representando siempre los intereses de nuestros clientes
+                            <span>durante todo el proceso logístico</span>. Nuestro SERVICIO DE CARGA Y CARGA EXPRESS incluyen:</h3>
+
+                            <div data-aos="fade-up-right" class="topics">
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Planificación y Logística</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Gestión de Rutas y Tiempos</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Seguridad en el Transporte</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Monitoreo en Todo Momento</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Optimización de Costos</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Cumplimiento de Normativas</p>
+                            </div>
+                            
+
+                        <div data-aos="fade-up-right"  class="button">
+                            <a target="_blank" href="http://bit.ly/3CZGpg1"><button>Solicitar presupuesto</button></a>
+                        </div>
+                    </div>
+                </div>
+
+            <div data-aos="fade-left" class="image">
+                <img src="./assets/servicio-carga.webp" alt="Servicio de Carga">
+            </div>
+        </div>
+    </section>
+
+    <section id="service-dois" class="topic">
+        <div class="content">
+                <div class="wrapper">
+                    <div class="text">
+                        <h2 data-aos="fade-up-left">TRANSPORTE DE CARGA <span>DE</span> MATERIALES PARA OBRAS</h2>
+                        <h3 data-aos="fade-up-left">AYSBLAS <span>Transportes</span> ofrece soluciones eficientes para el traslado de materiales de construcción, 
+                            <span>asegurando entregas puntuales y seguras</span>. Transportamos insumos esenciales para diversos proyectos,
+                            <span>adaptándonos a las necesidades de cada obra</span>:</h3>
+
+                            <div data-aos="fade-up-left" class="topics">
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Cemento y Agregados</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Fierro y Acero</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Ladrillos y Bloques</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Madera y Andamios</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Arena y Piedra</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Tuberías y PVC</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Concreto Premezclado</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> y más materiales...</p>
+                            </div>
+
+                        <div data-aos="fade-up-right"  class="button">
+                            <a target="_blank" href="http://bit.ly/3CZGpg1"><button>Solicitar presupuesto</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-right" class="image">
+                    <img src="./assets/servicio-materiales.webp" alt="Transporte de Materiales">
+                </div>
+        </div>
+    </section>
+
+    <section id="service-tres" class="topic">
+        <div class="content">
+                <div class="wrapper">
+                    <div class="text">
+                        <h2 data-aos="fade-up-right">TRANSPORTE DE GRUPOS <span>ELECTRÓGENOS Y MAQUINARIA</span> LIGERA</h2>
+                        <h3 data-aos="fade-up-right">La empresa <span>AYSBLAS</span> está especializada en el transporte y manejo de grupos electrógenos y maquinaria ligera, ofreciendo <span>soluciones seguras y eficientes</span> para diversos sectores. Nos destacamos en el traslado de equipos de alto valor, <span>garantizando un servicio confiable</span> y adaptado a las necesidades de cada cliente.</h3>
+                    
+                            <div data-aos="fade-up-right" class="topics">
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Personal Altamente Calificado</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Equipos Especializados</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Soluciones Personalizadas</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Máxima Seguridad</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Manipulación Profesional</p>
+                                <p><ion-icon name="radio-button-on-outline"></ion-icon> Servicio las 24 horas</p>
+                            </div>
+                    
+                        <div data-aos="fade-up-right"  class="button">
+                            <a target="_blank" href="http://bit.ly/3CZGpg1"><button>Solicitar presupuesto</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-right" class="image">
+                    <img src="./assets/servicio-electrogenos.webp" alt="Transporte de Materiales">
+                </div>
+        </div>
+    </section>
+
+    <section id="service-quatro" class="topic">
+        <div class="content">
+            <div class="wrapper">
+                <div class="text">
+                    <h2 data-aos="fade-up-left">SERVICIO DE <span>MUDANZAS</span> RESIDENCIALES Y EMPRESARIALES</h2>
+                    <h3 data-aos="fade-up-left">En <span>AYSBLAS Transportes</span> ofrecemos un servicio integral de mudanzas que destaca por su <span>cuidado y profesionalismo</span>. Desde la planificación hasta la entrega final, nuestro equipo experimentado <span>garantiza la seguridad de sus pertenencias</span> y el cumplimiento de los tiempos establecidos.</h3>
+    
+                    <div data-aos="fade-up-left" class="topics">
+                        <p><ion-icon name="radio-button-on-outline"></ion-icon> Embalaje Profesional</p>
+                        <p><ion-icon name="radio-button-on-outline"></ion-icon> Desmontaje y Montaje de Muebles</p>
+                        <p><ion-icon name="radio-button-on-outline"></ion-icon> Personal Capacitado</p>
+                        <p><ion-icon name="radio-button-on-outline"></ion-icon> Transporte Seguro</p>
+                        <p><ion-icon name="radio-button-on-outline"></ion-icon> Puntualidad Garantizada</p>
+                        <p><ion-icon name="radio-button-on-outline"></ion-icon> Cobertura Nacional</p>
+                    </div>
+    
+                    <div data-aos="fade-up-left" class="button">
+                        <a target="_blank" href="http://bit.ly/3CZGpg1"><button>Solicitar presupuesto</button></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div data-aos="fade-right" class="image">
+                <img src="./assets/servicio-mudanzas.webp" alt="Servicio de Mudanzas">
+            </div>
+        </div>
+    </section>
+
+    <section id="suporte">
+        <div class="wrapper">
+            <div class="content">
+                <div data-aos="fade-up-left" class="whatsapp">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+    
+                    <p>Recibe información <span> directamente a tu whatsapp.</span></p>
+                </div>
+    
+                <div data-aos="fade-up" class="image">
+                    <img src="./assets/bannerAYSBLAS.webp" alt="">
+                </div>
+    
+                <div data-aos="fade-up-right" class="ajuda">
+                    <span><ion-icon name="flash-outline"></ion-icon> Respuesta rápida</span>
+                    <h3>Necesitas <span>información?</span></h3>
+                    <p>Nuestro equipo <span>está listo</span> para hablar contigo!</p>
+                    <a target="_blank" href="http://bit.ly/3CZGpg1"><button>CONTÁCTANOS</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">Sobre</span>
+                    <h2>Conoce nuestra empresa</h2>
+                </header>
+
+                <div data-aos="fade-up-right" class="container">
+                    <div class="text">
+                        <h3>AYSBLAS</h3>
+                        <p>Fundada en 2017, nuestra empresa ha crecido continuamente, consolidando su presencia en todo el territorio nacional. Con un  
+                            <span>enfoque personalizado y compromiso con la excelencia</span>,  
+                            estamos dedicados a construir <span>alianzas sólidas y duraderas</span>,  
+                            participando activamente en las <span>necesidades de nuestros clientes</span>.  
+                        </p>
+                    </div>                        
+                    <div data-aos="fade-up-left" class="image">
+                        <img src="./assets/AYSBLASsobre.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agencias-envio">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <span class="span">AGENCIAS DE ENVÍO</span>
+                    <h2>Trabajamos con las mejores agencias</h2>
+                </header>
+
+                <div class="agencias-container">
+                    <div class="agencia-box shalom-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="agencia-logo">
+                            <img src="./assets/agencias/shaloom.png" alt="Logo Shaloom">
+                        </div>
+                        <h3>Shalom</h3>
+                    </div>
+                    
+                    <div class="agencia-box marvisur-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="agencia-logo">
+                            <img src="./assets/agencias/marvisur.png" alt="Logo Marvisur">
+                        </div>
+                        <h3>Marvisur</h3>
+                    </div>
+                    
+                    <div class="agencia-box grael-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="agencia-logo">
+                            <img src="./assets/agencias/grael.png" alt="Logo Grael">
+                        </div>
+                        <h3>Grael</h3>
+                    </div>
+                    
+                    <div class="agencia-box ciriacco-box" data-aos="fade-up" data-aos-delay="400">
+                        <div class="agencia-logo">
+                            <img src="./assets/agencias/ciriacco.png" alt="Logo Transportes Ciriacco">
+                        </div>
+                        <h3>Transportes Ciriacco</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            /* Estilo para el contenedor principal de agencias */
+            #agencias-envio .agencias-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                margin: 30px auto;
+                max-width: 1300px;
+                padding: 15px 0;
+            }
+            
+            /* Estilo para las cajas de agencias */
+            #agencias-envio .agencia-box {
+                flex: 1;
+                min-width: 0;
+                max-width: 250px;
+                transition: all 0.5s ease;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                margin: 0;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            #agencias-envio .agencia-logo {
+                width: 100%;
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+                position: relative;
+                overflow: hidden;
+                padding: 10px;
+            }
+            
+            #agencias-envio .agencia-logo img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+                transition: all 0.3s ease;
+            }
+            
+            #agencias-envio .agencia-box h3 {
+                margin-top: 15px;
+                font-size: 1.4rem;
+                text-align: center;
+            }
+            
+            /* Efecto de brillo para cada agencia */
+            #agencias-envio .shalom-box:hover {
+                box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+                transform: translateY(-5px);
+            }
+            
+            #agencias-envio .shalom-box:hover::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle, rgba(255,0,0,0.2) 0%, rgba(255,255,255,0) 70%);
+                z-index: 1;
+            }
+            
+            #agencias-envio .marvisur-box:hover {
+                box-shadow: 0 0 30px rgba(255, 140, 0, 0.6);
+                transform: translateY(-5px);
+            }
+            
+            #agencias-envio .marvisur-box:hover::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle, rgba(255,140,0,0.2) 0%, rgba(255,255,255,0) 70%);
+                z-index: 1;
+            }
+            
+            #agencias-envio .grael-box:hover {
+                box-shadow: 0 0 30px rgba(0, 180, 240, 0.6);
+                transform: translateY(-5px);
+            }
+            
+            #agencias-envio .grael-box:hover::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle, rgba(0,180,240,0.2) 0%, rgba(255,255,255,0) 70%);
+                z-index: 1;
+            }
+            
+            #agencias-envio .ciriacco-box:hover {
+                box-shadow: 0 0 30px rgba(0, 170, 0, 0.6);
+                transform: translateY(-5px);
+            }
+            
+            #agencias-envio .ciriacco-box:hover::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle, rgba(0,170,0,0.2) 0%, rgba(255,255,255,0) 70%);
+                z-index: 1;
+            }
+            
+            /* Efecto de aumento al pasar el cursor */
+            #agencias-envio .agencia-box:hover .agencia-logo img {
+                transform: scale(1.15);
+            }
+            
+            /* Asegurar que el contenido está por encima del efecto de brillo */
+            #agencias-envio .agencia-logo img,
+            #agencias-envio .agencia-box h3 {
+                position: relative;
+                z-index: 2;
+            }
+            
+            /* Responsive: ajustamos para mantener en horizontal pero con scroll en muy pequeñas */
+            @media (max-width: 900px) {
+                #agencias-envio .agencias-container {
+                    flex-wrap: wrap;
+                    gap: 15px;
+                }
+                
+                #agencias-envio .agencia-box {
+                    flex: 1 1 45%;
+                    max-width: 45%;
+                }
+            }
+            
+            @media (max-width: 600px) {
+                #agencias-envio .agencias-container {
+                    flex-wrap: nowrap;
+                    overflow-x: auto;
+                    justify-content: flex-start;
+                    padding-bottom: 15px;
+                    gap: 10px;
+                }
+                
+                #agencias-envio .agencia-box {
+                    flex: 0 0 80%;
+                    max-width: 80%;
+                    margin-right: 10px;
+                }
+                
+                #agencias-envio .agencia-logo {
+                    height: 180px;
+                }
+                
+                #agencias-envio .agencia-box h3 {
+                    font-size: 1.2rem;
+                }
+            }
+        </style>
+    </section>
+
+    <section id="clientes">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <span>CLIENTES</span>
+                    <h2>Conoce nuestros clientes</h2>
+                </header>
+
+                <div class="slide um">
+                    <div class="slide-text">
+                        <img src="./assets/clientes/remsac.png" alt="Logo Remsac">
+                        <img src="./assets/clientes/con&pavSUR.png" alt="Logo Construcciones y Pavimentos Sur">
+                        <img src="./assets/clientes/ICM.png" alt="Logo ICM">
+                        <img src="./assets/clientes/esondi.png" alt="Logo Esondi">
+                        <img src="./assets/clientes/ismachinesHDD.png" alt="Logo IS Machines HDD">
+                        <img src="./assets/clientes/pissano.png" alt="Logo Pissano">
+                        <img src="./assets/clientes/solip.png" alt="Logo Solip">
+                        <img src="./assets/clientes/mapei.png" alt="Logo Mapei">
+                        <img src="./assets/clientes/nixmedia.png" alt="Logo Nixmedia">
+                    </div>
+                    <div class="slide-text">
+                        <img src="./assets/clientes/remsac.png" alt="Logo Remsac">
+                        <img src="./assets/clientes/con&pavSUR.png" alt="Logo Construcciones y Pavimentos Sur">
+                        <img src="./assets/clientes/ICM.png" alt="Logo ICM">
+                        <img src="./assets/clientes/esondi.png" alt="Logo Esondi">
+                        <img src="./assets/clientes/ismachinesHDD.png" alt="Logo IS Machines HDD">
+                        <img src="./assets/clientes/pissano.png" alt="Logo Pissano">
+                        <img src="./assets/clientes/solip.png" alt="Logo Solip">
+                        <img src="./assets/clientes/mapei.png" alt="Logo Mapei">
+                        <img src="./assets/clientes/nixmedia.png" alt="Logo Nixmedia">
+                      </div>
+                </div>
+                <div class="slide dois">
+                    <div class="slide-text">
+                        <img src="./assets/clientes/remsac.png" alt="Logo Remsac">
+                        <img src="./assets/clientes/con&pavSUR.png" alt="Logo Construcciones y Pavimentos Sur">
+                        <img src="./assets/clientes/ICM.png" alt="Logo ICM">
+                        <img src="./assets/clientes/esondi.png" alt="Logo Esondi">
+                        <img src="./assets/clientes/ismachinesHDD.png" alt="Logo IS Machines HDD">
+                        <img src="./assets/clientes/pissano.png" alt="Logo Pissano">
+                        <img src="./assets/clientes/solip.png" alt="Logo Solip">
+                        <img src="./assets/clientes/mapei.png" alt="Logo Mapei">
+                        <img src="./assets/clientes/nixmedia.png" alt="Logo Nixmedia">
+                    </div>
+                    <div class="slide-text">
+                        <img src="./assets/clientes/remsac.png" alt="Logo Remsac">
+                        <img src="./assets/clientes/con&pavSUR.png" alt="Logo Construcciones y Pavimentos Sur">
+                        <img src="./assets/clientes/ICM.png" alt="Logo ICM">
+                        <img src="./assets/clientes/esondi.png" alt="Logo Esondi">
+                        <img src="./assets/clientes/ismachinesHDD.png" alt="Logo IS Machines HDD">
+                        <img src="./assets/clientes/pissano.png" alt="Logo Pissano">
+                        <img src="./assets/clientes/solip.png" alt="Logo Solip">
+                        <img src="./assets/clientes/mapei.png" alt="Logo Mapei">
+                        <img src="./assets/clientes/nixmedia.png" alt="Logo Nixmedia">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao">
+        <div class="content">
+             <div class="wrapper">
+             </div>
+             <div data-aos="fade-up" class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d128673.98968691718!2d-76.8788329295959!3d-12.233933078928665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91059642255d87e5%3A0x75c5b93fe8ad1eb6!2zTHVyw61u!5e1!3m2!1ses-419!2spe!4v1740335681471!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="content">
+                <img class="logo" src="./assets/logoAYSBLAS.png" alt="">
+
+                <div class="navigation">
+                    <h3>Navegación</h3>
+                    <p><a href="#home">Inicio</a></p>
+                    <p><a href="#sobre">Sobre nosotros</a></p>
+                    <p><a class="services-link" href="#servicesDesktop">Servicios</a></p>
+                    <p><a href="#suporte">Contacto</a></p>
+                </div>
+    
+                <div class="contato">
+                    <h3>Conéctate con nosotros</h3>
+                    
+                    <!-- Dirección con ícono -->
+                    <p>
+                        <a target="_blank" href="https://maps.app.goo.gl/FEMbRX7X1CzBseCx6">
+                            <ion-icon name="location-outline"></ion-icon>
+                            Calle Lurin - Lima-Lurin
+                        </a>
+                    </p>
+                    
+                    <!-- Email con ícono -->
+                    <p>
+                        <a target="_blank" href="mailto:transportesaysblas@gmail.com">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            transportesaysblas@gmail.com
+                        </a>
+                    </p>
+                    
+                    <!-- Teléfono con ícono -->
+                    <p>
+                        <a target="_blank" href="tel:+51 941-451-035">
+                            <ion-icon name="call-outline"></ion-icon>
+                            +51 941 451 035
+                        </a>
+                    </p>
+                </div>
+    
+                <div class="redes-sociais">
+                    <h3>Redes Sociales</h3>
+                    <div class="icons">
+                        <a target="_blank" href="http://bit.ly/3CZGpg1"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a target="_blank" href="https://www.facebook.com/saul.blascuadros"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a target="_blank" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© Todos los derechos reservados - AYSBLAS transportes</p>
+
+                <a target="_blank" href="https://github.com/gianmattus-programmer">
+                    <p class="author">
+                        Developed and Designed by Gianmattus-Programmer
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1500,
+            }
+        );
+      </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+    
+    <!-- Script de inicialización para resolver problemas de navegación -->
+    <script>
+        // Este script se ejecuta después de que todo el DOM y los otros scripts estén cargados
+        window.addEventListener('load', function() {
+            console.log('Ventana completamente cargada - iniciando correcciones finales');
+            
+            // Verificar y ajustar la visibilidad de las secciones de servicios
+            function fixServicesSections() {
+                const isMobile = window.innerWidth < 1080;
+                const mobileSection = document.getElementById('services');
+                const desktopSection = document.getElementById('servicesDesktop');
+                
+                if (mobileSection && desktopSection) {
+                    // En móvil, mostrar sección móvil y ocultar desktop
+                    if (isMobile) {
+                        mobileSection.style.display = 'block';
+                        desktopSection.style.display = 'none';
+                    } 
+                    // En escritorio, mostrar sección desktop y ocultar móvil
+                    else {
+                        mobileSection.style.display = 'none';
+                        desktopSection.style.display = 'block';
+                    }
+                    
+                    console.log('Secciones ajustadas para', isMobile ? 'móvil' : 'escritorio');
+                }
+            }
+            
+            // Ajustar secciones al cargar
+            fixServicesSections();
+            
+            // Ajustar secciones al redimensionar
+            window.addEventListener('resize', fixServicesSections);
+            
+            // Corregir todos los enlaces de servicios
+            document.querySelectorAll('.services-link').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const isMobile = window.innerWidth < 1080;
+                    const targetId = isMobile ? 'services' : 'servicesDesktop';
+                    
+                    // Cerrar menú móvil si está abierto
+                    if (typeof closeMenu === 'function') {
+                        closeMenu();
+                    }
+                    
+                    // Asegurar que la sección está visible
+                    fixServicesSections();
+                    
+                    // Navegar a la sección
+                    setTimeout(function() {
+                        const element = document.getElementById(targetId);
+                        if (element) {
+                            element.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }, 100);
+                });
+            });
+            
+            // FORZAR VISIBILIDAD DE LA IMAGEN PRINCIPAL
+            function forceMainImageVisibility() {
+                const mainImage = document.getElementById('interactive-image');
+                if (mainImage) {
+                    console.log('Forzando visibilidad de imagen principal');
+                    mainImage.style.display = 'block';
+                    mainImage.style.opacity = '1';
+                    mainImage.style.position = 'absolute';
+                    mainImage.style.top = '0';
+                    mainImage.style.left = '0';
+                    mainImage.style.width = '100%';
+                    mainImage.style.height = '100vh';
+                    mainImage.style.zIndex = '-1';
+                    
+                    const img = mainImage.querySelector('img');
+                    if (img) {
+                        img.style.display = 'block';
+                        img.style.width = '100%';
+                        img.style.height = '100%';
+                        img.style.objectFit = 'cover';
+                    }
+                }
+            }
+            
+            // Ejecutar al cargar
+            forceMainImageVisibility();
+            
+            // Ejecutar al redimensionar
+            window.addEventListener('resize', forceMainImageVisibility);
+        });
+    </script>
+</body>
+</html>
