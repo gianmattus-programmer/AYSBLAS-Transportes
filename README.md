@@ -54,7 +54,7 @@ AYSBLAS-Transportes/
 │   └── index.css          # Estilos principales
 ├── assets/
 │   ├── logoAYSBLAS.png    # Logo principal
-│   ├── tracosDamatta.webp # Elementos decorativos
+│   ├── AYSBLAStrans.webp  # Elementos decorativos
 │   ├── agencias/          # Logos de agencias asociadas
 │   ├── clientes/          # Logos de clientes
 │   └── ...                # Otras imágenes
