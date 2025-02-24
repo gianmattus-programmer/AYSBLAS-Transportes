@@ -1,0 +1,98 @@
+#agencias-envio {
+    background-color: #1a1a1a;
+    padding: 8rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#agencias-envio header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#agencias-envio span.span {
+    font-size: 1.6rem;
+    color: var(--orange);
+    font-weight: 400;
+}
+
+#agencias-envio h2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.agencias-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.agencia-box {
+    background-color: #252526;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.agencia-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.agencia-logo {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.agencia-logo img {
+    max-width: 80%;
+    max-height: 10rem;
+    object-fit: contain;
+    filter: brightness(0.9);
+    transition: all 300ms ease;
+}
+
+.agencia-box:hover .agencia-logo img {
+    filter: brightness(1.2);
+}
+
+.agencia-box h3 {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .agencias-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 1080px) {
+    .agencias-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    #agencias-envio h2 {
+        font-size: 3.5rem;
+    }
+} 

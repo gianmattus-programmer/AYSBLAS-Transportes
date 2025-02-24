@@ -1,0 +1,109 @@
+#services {
+    background: var(--gray);
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+#services header {
+    text-align: left;
+}
+
+#services .content span.span {
+    font-size: 1.6rem;
+    color: var(--orange);
+    font-weight: 400;
+}
+
+#services h2 {
+    margin-top: .5rem;
+    font-size: 2.8rem;
+    color: var(--white);
+    font-weight: 500;
+
+    margin-bottom: 4rem;
+}
+
+#services .cards {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#services .cards .card {
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: #1e1e1e;
+    text-align: left;
+}
+
+#services .cards .card h3 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 500;
+
+    position: relative;
+}
+
+#services .cards .card h3::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    left: -1.5rem;
+    height: 6rem;
+    background: var(--orange);
+    top: -4rem;
+}
+
+#services .cards .card p {
+    color: var(--paragraphy);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#services .cards .card a {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    width: max-content;
+
+    transition: all 200ms ease-in-out;
+}
+
+#services .cards .card a:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+#services .cards .card a:hover ion-icon {
+    transform: translateX(8px);
+}
+
+#services .cards .card a ion-icon {
+    color: var(--orange);
+
+    transition: all 200ms ease-in-out;
+}
+
+#services img.iconeDamatta {
+    display: none;
+}
+
+@media (min-width: 1080px) {
+    #services {
+        display: none;
+    }
+}

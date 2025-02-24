@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --nav-height: 7.2rem;
+
+    --gray: #252526;
+    --white: #f1f1f1;
+    --paragraphy: #929292;
+
+    --orange: #007cf7;
+    --gradient: linear-gradient(45deg, #007cf7, #a8bfcc);
+    --blue: #007cf7;
+    --yellow: #007cf7;
+    --gradient-yellow: linear-gradient(45deg, #f4c121, #C39507): 
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--gray);
+  scroll-behavior: smooth;
+}
+  
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  width: min(50rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+  
+section {
+  padding-block: 8rem;
+}
+
+::selection {
+  color: #000000;
+  background: #d8d8d8;
+}
+
+  .wrapper {
+    width: min(50rem, 100%);
+    margin-inline: auto;
+  
+    padding-inline: 2.4rem;
+  }
+
+  /*====  MEDIAS RESPONSIVES ============================ */
+  @media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(180rem, 100%);
+    }
+  }
+
+  /*====  scrollbar ============================ */
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  width: .6rem;
+  background: var(--gradient);
+  border-radius: 1rem;
+}
+
+  /* buttonWhatsapp =================== */
+#buttonWhatsapp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+  
+    opacity: 0;
+    visibility: hidden;
+  
+    transform: translateY(100%);
+    transition: all 300ms ease-in-out;
+  }
+  
+  #buttonWhatsapp.show {
+    opacity: 1;
+    visibility: visible;
+  
+    transform: translateY(0);
+  }
+  
+  #buttonWhatsapp img {
+    width: 6rem;
+    transition: all 300ms ease-in-out;
+  }
+  
+  #buttonWhatsapp svg:hover {
+    transform: scale(1.1);
+  }

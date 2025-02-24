@@ -1,0 +1,140 @@
+
+#clientes {
+    background: var(--black-700);
+    overflow: hidden;
+  }
+
+#clientes h2 {
+    font-size: 2.8rem;
+    color: var(--white);
+    font-weight: 500;
+
+    margin-bottom: 4rem;
+}
+
+#clientes header span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+  
+    font-family: var(--interV);
+  
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes slideDois {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  #clientes .slide {
+    overflow: hidden;
+    padding: 2rem 0;
+    background: var(--black-700);
+    display: flex;
+    white-space: nowrap;
+  
+    position: relative;
+  }
+  
+  #clientes .slide:before,
+  #clientes .slide:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 3rem;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  #clientes .slide:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #252526);
+  }
+  
+  #clientes .slide:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #252526);
+  }
+  
+  #clientes .slide-text {
+    animation: slide 25s infinite linear;
+    display: flex;
+  }
+
+  #clientes .slide.dois .slide-text {
+    animation: slideDois 25s infinite linear;
+  }
+  
+  #clientes .slide-text img {
+    width: 10rem;
+    margin: 0 2rem;
+    opacity: .7;
+    position: relative;
+
+    transition: all 200ms ease-in-out;
+  }
+
+  #clientes .slide-text img:hover {
+    filter: initial;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  @media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#clientes .wrapper {
+        width: 100%;
+        padding-inline: 0;
+    }
+    
+
+    section#clientes header span {
+        font-size: 1.4rem;
+    }
+
+    section#clientes header h2 {
+        font-size: 3.5rem;
+        color: var(--white);
+        font-weight: 500;
+    
+        margin-bottom: 7rem;
+    }
+
+    section#clientes .slide:before,
+    section#clientes .slide:after {
+        width: 25rem;
+    }
+
+    section#clientes .slide-text img {
+        width: 15rem;
+    }
+}

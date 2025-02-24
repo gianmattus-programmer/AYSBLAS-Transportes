@@ -1,0 +1,176 @@
+footer {
+    background: #1a1a1b;
+    overflow: hidden;
+    position: relative;
+
+    padding-block: 8rem;
+}
+
+footer::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(to right, #91ff0000 0%, #1292db 50%, #91ff0000 100%); 
+}
+
+footer .logo {
+    width: 20rem;
+    margin-bottom: 2rem;
+}
+
+footer .content {
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: start;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+footer .content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--paragraphy);
+    margin-bottom: 1rem;
+}
+
+footer .content p {
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: var(--paragraphy);
+}
+
+footer .content p a {
+    color: #9b9b9b;
+}
+
+a[href^="tel"] {
+    color: inherit; 
+    text-decoration: none;
+}
+
+footer div.redes-sociais .icons {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+footer div.redes-sociais a {
+    text-decoration: none;
+}
+
+footer .redes-sociais ion-icon {
+    color: var(--paragraphy);
+    font-size: 2rem;
+}
+
+footer .contato p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+footer .contato p a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #9b9b9b;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+
+footer .contato p a:hover {
+    color: var(--color-text);
+    transform: scale(1.1);
+    cursor: url("../assets/CURSOR\ LSB.svg"), auto;
+}
+
+footer .contato ion-icon {
+    font-size: 2rem;
+    color: var(--paragraphy);
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+}     
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    footer#footer .wrapper .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-content: center;
+        justify-items: center;
+        gap: 15rem;
+    }
+
+    footer#footer .wrapper div {
+        gap: 1rem;
+    }
+
+    footer#footer .wrapper div.redes-sociais {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: end;
+    }
+
+    footer#footer a {
+        transition: all 200ms ease-in-out;
+    }
+
+    footer#footer a:hover {
+        color: var(--color-text);
+        cursor: url("../assets/CURSOR\ LSB.svg"), auto;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    footer#footer .redes-sociais ion-icon {
+        font-size: 3rem;
+    }
+}  
+
+@media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+  }
+  
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+  }
+
+#footer .content h3 {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover para los títulos */
+#footer .navigation h3:hover,
+#footer .contato h3:hover,
+#footer .redes-sociais h3:hover {
+    color: var(--orange); /* O el color que prefieras */
+    transform: scale(1.05); /* Ligero efecto de escala */
+    cursor: pointer;
+}

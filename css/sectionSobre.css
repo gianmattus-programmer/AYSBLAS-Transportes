@@ -1,0 +1,110 @@
+#sobre {
+    background: var(--gray);
+    position: relative;
+    overflow: hidden;
+}
+
+#sobre header {
+    text-align: left;
+}
+
+#sobre .content span.span {
+    font-size: 1.6rem;
+    color: var(--orange);
+    font-weight: 400;
+}
+
+#sobre h2 {
+    margin-top: .5rem;
+    font-size: 2.8rem;
+    color: var(--white);
+    font-weight: 500;
+
+    margin-bottom: 4rem;
+}
+
+#sobre .text {
+    text-align: left;
+}
+
+#sobre .text h3 {
+    font-size: 2rem;
+    color: var(--orange);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#sobre .text p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: var(--paragraphy);
+    font-weight: 300;
+}
+
+#sobre .text p span {
+    color: #fff;
+}
+
+#sobre .image img {
+    margin-top: 4rem;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow:  20px 20px 60px #1f1f20,
+             -20px -20px 60px #2b2b2c;
+}
+
+  
+@media (min-width: 1080px) {    
+    section#sobre header {
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+    
+    section#sobre .content span.span {
+        font-size: 1.6rem;
+        color: var(--orange);
+        font-weight: 400;
+    }
+    
+    section#sobre h2 {
+        margin-top: .5rem;
+        font-size: 3.5rem;
+        color: var(--white);
+        font-weight: 500;
+    
+        margin-bottom: 7rem;
+    }
+
+    section#sobre .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 8rem;
+    }
+
+    section#sobre .text {
+        text-align: center;
+    }
+
+    section#sobre .text h3 {
+        font-size: 2.4rem;
+    }
+    
+    section#sobre .text p {
+        font-size: 1.8rem;
+    }
+
+    section#sobre .content .image img {
+        margin-top: initial;
+    }
+}
+
+@media (min-width: 1400px) {
+    section#sobre .text h3 {
+        font-size: 3rem;
+    }
+    
+    section#sobre .text p {
+        font-size: 2rem;
+    }
+}
